@@ -6,7 +6,7 @@ foreground = yes
 
 [ssh]
 accept = 22
-connect = ${STUNNEL_SERVER_HOST}:${STUNNEL_SERVER_PORT:443}
+connect = ${STUNNEL_SERVER_HOST}:${STUNNEL_SERVER_PORT:-443}
 "
 
 echo "$CONFIG" > /etc/stunnel/stunnel.conf
